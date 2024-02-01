@@ -16,8 +16,11 @@ const Order = (props) => {
         <h3>Products</h3>
         {props.productsData.map((data, index) => (
           <li key={index}>
-            {data.price} - {data.productName}{' '}
-            <button onClick={(e) => { e.preventDefault(); deleteHandler(index); }}>Delete Product</button>
+            {data.price} - {data.productName}{''}
+            <button onClick={   
+              (e) => { e.preventDefault(); 
+            deleteHandler(index); }}>
+            Delete Product</button>
           </li>
         ))}
   
